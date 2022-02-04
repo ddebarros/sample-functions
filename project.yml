@@ -2,7 +2,5 @@ packages:
   - name: "default"
     actions:
       - name: "hello"
-        environment:
-          USER: ${USER}
         parameters:
           run_env: ${RUN_ENV}
