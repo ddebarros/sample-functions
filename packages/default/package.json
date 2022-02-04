@@ -1,0 +1,10 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "hello test function",
+  "main": "hello.js",
+  "author": "Karan Thukral",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
