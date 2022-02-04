@@ -3,6 +3,6 @@ packages:
     actions:
       - name: "hello"
         environment:
-          USER: ${HELLO_USER}
+          USER: ${USER}
         parameters:
-          extra: ${TEST_ENV}
+          run_env: ${RUN_ENV}
