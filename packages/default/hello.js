@@ -3,9 +3,15 @@ var mysql = require('mysql');
 function main(args) {
   var con = mysql.createConnection(process.env.DB_URL)
   con.connect(function (err) {
-    if (err) throw err;
+    if (err) {
+      console.log(err);
+      throw err;
+    }
     con.query("SHOW tables", function (err, result, fields) {
-      if (err) throw err;
+      if (err) {
+        console.log(err);
+        throw err;
+      }
       console.log(result);
     });
   });
