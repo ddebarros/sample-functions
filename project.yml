@@ -3,6 +3,4 @@ packages:
     actions:
       - name: "hello"
         environment:
-          USER: ${HELLO_USER}
-        parameters:
-          extra: ${TEST_ENV}
+          DB_URL: ${DB_URL}
