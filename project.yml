@@ -2,5 +2,3 @@ packages:
   - name: "default"
     actions:
       - name: "hello"
-        environment:
-          "DATABASE_URL": "${DATABASE_URL}"
