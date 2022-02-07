@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
 function main(args) {
-  var con = mysql.createConnection(process.env.DB_URL)
+  var con = mysql.createConnection(process.env.DATABASE_URL)
   con.connect(function (err) {
     if (err) {
       console.log(err);
