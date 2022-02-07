@@ -1,4 +1,7 @@
 packages:
-  - name: "default"
+  - name: default
     actions:
-      - name: "hello"
+      - name: hello
+        runtime: 'nodejs:default'
+        environment:
+          DATABASE_URL: "${DATABASE_URL}"
